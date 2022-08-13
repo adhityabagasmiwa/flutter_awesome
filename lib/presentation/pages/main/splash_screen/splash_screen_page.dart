@@ -12,18 +12,19 @@ class SplashScreenPage extends BasePage<SplashScreenController> {
 
   @override
   Widget get view => Scaffold(
-      key: globalKey,
-      backgroundColor: colorPrimary,
-      body: Align(
-        alignment: Alignment.center,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TSImage.asset(assetName: 'img_logo.png'),
-            const SizedBox(height: AppSize.dimen12),
-            TSSvgPicture.asset(assetName: 'ic_logo_name.svg'),
-          ],
+        key: globalKey,
+        backgroundColor: colorPrimary,
+        body: Align(
+          alignment: Alignment.center,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TSImage.asset(assetName: 'img_logo.png'),
+              const SizedBox(height: AppSize.dimen12),
+              TSSvgPicture.asset(assetName: 'ic_logo_name.svg'),
+            ],
+          ),
         ),
-      ));
+      );
 }
