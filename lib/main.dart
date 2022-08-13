@@ -6,8 +6,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_awesome/presentation/di/app_module.dart';
 import 'package:flutter_awesome/presentation/misc/app_colors.dart';
 import 'package:flutter_awesome/presentation/misc/scroll_behaviour.dart';
-import 'package:flutter_awesome/presentation/pages/main/home/home_page.dart';
 import 'package:flutter_awesome/presentation/misc/router.dart' as custom_router;
+import 'package:flutter_awesome/presentation/pages/main/splash_screen/splash_screen_page.dart';
 import 'package:get_it/get_it.dart';
 
 void main() {
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomePage(controller: GetIt.I.get()),
+      home: SplashScreenPage(controller: GetIt.I.get()),
       onGenerateRoute: _router.getRoute,
       builder: (_, child) {
         return ScrollConfiguration(
