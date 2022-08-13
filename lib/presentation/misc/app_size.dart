@@ -1,5 +1,6 @@
 class AppSize {
   static const dimen0 = 0.0;
+  static const dimen12 = 12.0;
 
   static const text10 = 10.0;
   static const text12 = 12.0;
