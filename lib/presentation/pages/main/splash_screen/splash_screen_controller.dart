@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_awesome/presentation/base/base_controller.dart';
-import 'package:flutter_awesome/presentation/pages/main/home/home_page.dart';
 import 'package:flutter_awesome/presentation/pages/main/main_page.dart';
 
 class SplashScreenController extends BaseController {
