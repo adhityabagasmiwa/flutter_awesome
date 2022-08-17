@@ -97,7 +97,7 @@ class HomePage extends BasePage<HomeController> {
       color: Colors.white,
       child: Stack(
         children: [
-          Container(color: colorPrimary, height: 150.0),
+          Container(color: colorPrimary, height: AppSize.dimen150),
           Container(
             padding: const EdgeInsets.fromLTRB(
               AppSize.dimen20,
@@ -266,10 +266,10 @@ class HomePage extends BasePage<HomeController> {
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     itemCount: controller.modelPackage.length,
-                    itemBuilder: ((context, index) {
+                    itemBuilder: (context, index) {
                       var item = controller.modelPackage[index];
                       return _buildPackageCard(item);
-                    }),
+                    },
                   ),
                 ),
                 const Padding(

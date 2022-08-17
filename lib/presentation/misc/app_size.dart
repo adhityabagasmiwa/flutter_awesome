@@ -15,6 +15,7 @@ class AppSize {
   static const dimen25 = 25.0;
   static const dimen68 = 68.0;
   static const dimen103 = 103.0;
+  static const dimen150 = 150.0;
 
   static const text10 = 10.0;
   static const text12 = 12.0;
