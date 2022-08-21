@@ -1,5 +1,6 @@
 class AppSize {
   static const dimen0 = 0.0;
+  static const dimen1 = 1.0;
   static const dimen2 = 2.0;
   static const dimen4 = 4.0;
   static const dimen5 = 5.0;
@@ -13,8 +14,11 @@ class AppSize {
   static const dimen21 = 21.0;
   static const dimen24 = 24.0;
   static const dimen25 = 25.0;
+  static const dimen32 = 32.0;
+  static const dimen46 = 46.0;
   static const dimen68 = 68.0;
   static const dimen103 = 103.0;
+  static const dimen147 = 146.0;
   static const dimen150 = 150.0;
 
   static const text10 = 10.0;

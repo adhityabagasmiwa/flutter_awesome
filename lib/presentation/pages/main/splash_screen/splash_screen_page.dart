@@ -4,6 +4,7 @@ import 'package:flutter_awesome/presentation/misc/app_colors.dart';
 import 'package:flutter_awesome/presentation/misc/app_size.dart';
 import 'package:flutter_awesome/presentation/pages/main/splash_screen/splash_screen_controller.dart';
 import 'package:flutter_awesome/presentation/widgets/asset_widget.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SplashScreenPage extends BasePage<SplashScreenController> {
   SplashScreenPage({Key? key, required super.controller}) : super(key: key);
@@ -21,7 +22,7 @@ class SplashScreenPage extends BasePage<SplashScreenController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TSImage.asset(assetName: 'img_logo.png'),
-              const SizedBox(height: AppSize.dimen12),
+              SizedBox(height: AppSize.dimen12.w),
               TSSvgPicture.asset(assetName: 'ic_logo_name.svg'),
             ],
           ),
