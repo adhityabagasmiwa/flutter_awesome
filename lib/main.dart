@@ -8,6 +8,7 @@ import 'package:flutter_awesome/presentation/misc/app_colors.dart';
 import 'package:flutter_awesome/presentation/misc/scroll_behaviour.dart';
 import 'package:flutter_awesome/presentation/misc/router.dart' as custom_router;
 import 'package:flutter_awesome/presentation/pages/main/splash_screen/splash_screen_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
 
 void main() {
@@ -45,18 +46,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: SplashScreenPage(controller: GetIt.I.get()),
-      onGenerateRoute: _router.getRoute,
-      builder: (_, child) {
-        return ScrollConfiguration(
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: false,
+      builder: (context, _) => MaterialApp(
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        home: SplashScreenPage(controller: GetIt.I.get()),
+        onGenerateRoute: _router.getRoute,
+        builder: (_, child) => ScrollConfiguration(
           behavior: TSScrollBehavior(),
           child: child ?? const SizedBox(),
-        );
-      },
-      navigatorObservers: [_router.routeObserver],
+        ),
+        navigatorObservers: [_router.routeObserver],
+      ),
     );
   }
 }

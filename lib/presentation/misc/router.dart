@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_awesome/presentation/pages/main/login/login_page.dart';
 import 'package:flutter_awesome/presentation/pages/main/main_page.dart';
 import 'package:flutter_awesome/presentation/pages/main/splash_screen/splash_screen_page.dart';
 import 'package:get_it/get_it.dart';
@@ -19,6 +20,9 @@ class Router {
 
       case SplashScreenPage.route:
         return _buildRoute(settings, SplashScreenPage(controller: di.get()));
+      
+      case LoginPage.route:
+        return _buildRoute(settings, LoginPage(controller: di.get()));
 
       default:
         return null;

@@ -6,6 +6,7 @@ import 'package:flutter_awesome/presentation/misc/app_size.dart';
 import 'package:flutter_awesome/presentation/misc/app_styles.dart';
 import 'package:flutter_awesome/presentation/pages/main/home/home_controller.dart';
 import 'package:flutter_awesome/presentation/widgets/asset_widget.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends BasePage<HomeController> {
@@ -13,7 +14,7 @@ class HomePage extends BasePage<HomeController> {
 
   Widget _buildPackageCard(ModelPackage item) {
     return Container(
-      width: AppSize.dimen103,
+      width: AppSize.dimen103.w,
       padding: const EdgeInsets.symmetric(
         vertical: AppSize.dimen8,
         horizontal: AppSize.dimen8,
@@ -38,7 +39,7 @@ class HomePage extends BasePage<HomeController> {
             textStyle: textStyleW400S14,
             color: colorBlack,
           ),
-          const SizedBox(height: AppSize.dimen4),
+          SizedBox(height: AppSize.dimen4.w),
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -47,7 +48,7 @@ class HomePage extends BasePage<HomeController> {
                 textStyle: textStyleW700S24,
                 color: colorPrimary,
               ),
-              const SizedBox(width: AppSize.dimen4),
+              SizedBox(width: AppSize.dimen4.w),
               _buildTextTitle(
                 text: item.type,
                 textStyle: textStyleW400S14,
@@ -97,7 +98,7 @@ class HomePage extends BasePage<HomeController> {
       color: Colors.white,
       child: Stack(
         children: [
-          Container(color: colorPrimary, height: AppSize.dimen150),
+          Container(color: colorPrimary, height: AppSize.dimen150.w),
           Container(
             padding: const EdgeInsets.fromLTRB(
               AppSize.dimen20,
@@ -126,7 +127,7 @@ class HomePage extends BasePage<HomeController> {
                     ],
                   ),
                 ),
-                const SizedBox(height: AppSize.dimen7),
+                SizedBox(height: AppSize.dimen7.w),
                 Container(
                   padding: const EdgeInsets.fromLTRB(
                     AppSize.dimen20,
@@ -157,12 +158,12 @@ class HomePage extends BasePage<HomeController> {
                           TSImage.asset(assetName: 'img_simpati_logo.png'),
                         ],
                       ),
-                      const SizedBox(height: AppSize.dimen21),
+                      SizedBox(height: AppSize.dimen21.w),
                       _buildTextTitle(
                         text: 'Sisa Pulsa Anda',
                         textStyle: textStyleW500S14,
                       ),
-                      const SizedBox(height: AppSize.dimen5),
+                      SizedBox(height: AppSize.dimen5.w),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -190,7 +191,7 @@ class HomePage extends BasePage<HomeController> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: AppSize.dimen24),
+                      SizedBox(height: AppSize.dimen24.w),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -202,7 +203,7 @@ class HomePage extends BasePage<HomeController> {
                               endStyle: textStyleW700S14,
                             ),
                           ),
-                          const SizedBox(height: AppSize.dimen4),
+                          SizedBox(height: AppSize.dimen4.w),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
@@ -210,7 +211,7 @@ class HomePage extends BasePage<HomeController> {
                                 text: 'Telkomsel POIN',
                                 textStyle: textStyleW400S14,
                               ),
-                              const SizedBox(width: AppSize.dimen4),
+                              SizedBox(width: AppSize.dimen4.w),
                               Container(
                                 decoration: const BoxDecoration(
                                   borderRadius: BorderRadius.all(
@@ -261,7 +262,7 @@ class HomePage extends BasePage<HomeController> {
               children: [
                 _buildHeroSection(),
                 SizedBox(
-                  height: AppSize.dimen68,
+                  height: AppSize.dimen68.w,
                   child: ListView.builder(
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
@@ -272,13 +273,13 @@ class HomePage extends BasePage<HomeController> {
                     },
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(
+                Padding(
+                  padding: const EdgeInsets.only(
                     top: AppSize.dimen25,
                     bottom: AppSize.dimen20,
                   ),
                   child: Divider(
-                    height: AppSize.dimen8,
+                    height: AppSize.dimen8.w,
                     thickness: AppSize.dimen8,
                   ),
                 )
