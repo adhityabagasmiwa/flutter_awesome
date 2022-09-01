@@ -1,6 +1,7 @@
 import 'package:flutter_awesome/presentation/pages/main/home/home_controller.dart';
 import 'package:flutter_awesome/presentation/pages/main/main_controller.dart';
 import 'package:flutter_awesome/presentation/pages/main/splash_screen/splash_screen_controller.dart';
+import 'package:flutter_awesome/presentation/pages/main/verification/verification_controller.dart';
 import 'package:get_it/get_it.dart';
 
 class ControllerModule {
@@ -9,5 +10,6 @@ class ControllerModule {
     di.registerFactory(() => MainController());
     di.registerFactory(() => HomeController());
     di.registerFactory(() => SplashScreenController());
+    di.registerFactory(() => VerificationController());
   }
 }

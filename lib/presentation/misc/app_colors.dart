@@ -9,3 +9,4 @@ const Color colorShadow = Color.fromRGBO(16, 37, 53, 0.08);
 
 const Color colorWhite = Colors.white;
 const Color colorBlack = Colors.black;
+const Color colorRedLink = Color(0XFFEC2028);
