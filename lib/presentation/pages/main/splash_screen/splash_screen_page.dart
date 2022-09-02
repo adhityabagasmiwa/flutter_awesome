@@ -8,7 +8,7 @@ import 'package:flutter_awesome/presentation/widgets/asset_widget.dart';
 class SplashScreenPage extends BasePage<SplashScreenController> {
   SplashScreenPage({Key? key, required super.controller}) : super(key: key);
 
-  static const String route = 'Splash';
+  static const String route = '/splash';
 
   @override
   Widget get view => Scaffold(
